@@ -1,0 +1,148 @@
+.greenhouseButton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.logsContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 80vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #FFFFFF;
+  padding: 42px 4px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.btn {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: black;
+  padding: 16px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.activeButton {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  padding: 16px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.filterRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+
+.dataTable th,
+.dataTable td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.pagination {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.error {
+  color: red;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .logsContainer {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .btn,
+  .activeButton {
+    padding: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .filterRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dataTable {
+    overflow-x: auto;
+    display: block;
+  }
+
+  .dataTable table {
+    min-width: 600px;
+  }
+
+  .pagination {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}

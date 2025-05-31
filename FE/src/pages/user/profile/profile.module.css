@@ -1,0 +1,256 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.leftColumn {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.profileInfo {
+  text-align: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.updateAvatarButton {
+  margin-top: 10px;
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.updateAvatarButton:hover {
+  background: #218838;
+}
+
+.contactInfo h3 {
+  margin-bottom: 10px;
+}
+
+.rightColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.personalInfo form,
+.changePassword form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.personalInfo input,
+.changePassword input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.saveButton {
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.saveButton:hover {
+  background: #0056b3;
+}
+
+.changePasswordButton {
+  padding: 12px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.changePasswordButton:hover {
+  background: #c82333;
+}
+
+/* Modal OTP */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.modalContent input[type="text"] {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Các nút trong modal */
+.modalButtons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.resendButton,
+.confirmOtpButton,
+.cancelButton {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.resendButton {
+  background: #ffc107;
+  color: #212529;
+}
+
+.resendButton:hover {
+  background: #e0a800;
+}
+
+.confirmOtpButton {
+  background: #17a2b8;
+  color: white;
+}
+
+.confirmOtpButton:hover {
+  background: #138496;
+}
+
+.cancelButton {
+  background: #6c757d;
+  color: white;
+}
+
+.cancelButton:hover {
+  background: #5a6268;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+  }
+
+  /* Ảnh avatar nhỏ lại, căn giữa */
+  .avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+  }
+
+  .updateAvatarButton {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Các nhóm form gọn lại */
+  .formGroup {
+    gap: 8px;
+  }
+
+  .personalInfo input,
+  .changePassword input {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .saveButton,
+  .changePasswordButton {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Modal OTP co lại */
+  .modalContent {
+    width: 90%;
+    max-width: 300px;
+    padding: 15px;
+  }
+
+  .modalButtons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .resendButton,
+  .confirmOtpButton,
+  .cancelButton {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+}

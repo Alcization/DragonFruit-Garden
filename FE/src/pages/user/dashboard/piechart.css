@@ -1,0 +1,57 @@
+.donut-page-container {
+  background-color: #9ee98f;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 450px; 
+  text-align: center;
+}
+  
+.donut-page-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+  
+.donut-charts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.donut-item {
+  background-color: #c1f0ad;
+  border-radius: 16px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 190px;
+  max-width: 190px;
+}
+
+@media screen and (max-width: 768px) {
+  .donut-charts-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .donut-item {
+    max-width: 100%;
+    max-height: 160px;
+    padding: 8px;
+  }
+
+  .donut-page-container {
+    padding: 12px;
+    width: 100%;
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .donut-charts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+  

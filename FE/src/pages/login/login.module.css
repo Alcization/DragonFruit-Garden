@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+  
+.login_container {
+    display: flex;
+    height: 100vh;
+}
+
+.login_form {
+    width: 50%;
+    padding: 0 100px 0 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.welcome2 {
+    font-size: 20px;
+    color: #666;
+    margin: 10px 0 0px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0 5px;
+}
+
+.input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.forgot_password {
+    text-align: right;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.forgot_password a {
+    color: #3366cc;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login_btn {
+    background: #0a0f0d;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.separator {
+    text-align: center;
+    margin: 20px 0;
+    color: #aaa;
+}
+
+.google_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+.google_login img {
+    width: 20px;
+    height: 20px;
+}
+
+.register_link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register_link a {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.login_image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_image img {
+    width: 75%;
+    border-radius: 12px;
+    max-height: 90vh;
+}
+
+
+@media only screen and (max-width: 768px) {
+.login_container {
+    flex-direction: column;
+    height: auto;
+}
+
+.login_form {
+    width: 100%;
+    padding: 20px;
+}
+
+.login_image {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.login_image img {
+    width: 90%;
+    max-height: none;
+}
+
+.welcome1 {
+    font-size: 24px;
+}
+
+.welcome2 {
+    font-size: 16px;
+}
+
+.label {
+    font-size: 16px;
+    margin: 20px 0 5px;
+}
+
+.input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.forgot_password {
+    font-size: 14px;
+}
+
+.login_btn {
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.separator {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.google_login {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.register_link {
+    font-size: 14px;
+}
+
+.footer {
+    font-size: 10px;
+    margin-top: 20px;
+}
+}
+  
